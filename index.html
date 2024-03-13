@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小c的黑店</title>
+  <link rel="stylesheet" href="服装首页.css">
+  <link href="https://fonts.googlefonts.cn/css?family=Indie+Flower" rel="stylesheet">
+  <script src="服装首页.js" defer></script>
 </head>
 <body>
-    <h1 align="center">你好</h1>
+<article>
+  <h1>欢迎来到我的个人服装店</h1>
+  <nav>
+    <ul>
+      <li><a href="首页.html" class="link-color">首页</a></li>
+      <li><a href="" class="link-color">男装</a></li>
+      <li><a href="" class="link-color">女装</a></li>
+      <li><a href="" class="link-color">童装</a></li>
+    </ul>
+  </nav>
+</article>
+<div id="nav-right">
+  <a href="#" class="nav-link" onclick="showModal('loginModal')">登录</a>
+  <a href="#" class="nav-link" onclick="showModal('registerModal')">注册</a>
+</div>
+<!-- 登录模态窗口 -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('loginModal')">&times;</span>
+    <h2>登录</h2>
+    <form>
+      <label for="username">账号:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">密码:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">登录</button>
+    </form>
+  </div>
+</div>
+<header>
+
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <!-- 轮播图内容 -->
+      <img src="slide1.jpg" alt="Image 1" width="500" height="500">
+      <img src="slide2.jpg" alt="Image 2" width="500" height="500">
+      <img src="slide3.jpg" alt="Image 3" width="500" height="500">
+      <img src="slide4.jpg" alt="Image 4" width="500" height="500">
+      <img src="slide5.jpg" alt="Image 5" width="500" height="500">
+      <img src="slide6.jpg" alt="Image 6" width="500" height="500">
+      <!-- 更多轮播项... -->
+    </div>
+    <div class="carousel-indicators">
+      <!-- 指示器按钮 -->
+      <button class="indicator" data-slide-to="0"></button>
+      <button class="indicator" data-slide-to="1"></button>
+      <button class="indicator" data-slide-to="2"></button>
+      <button class="indicator" data-slide-to="3"></button>
+      <button class="indicator" data-slide-to="4"></button>
+      <!-- 更多指示器... -->
+    </div>
+<!--    <button class="carousel-control prev">Previous</button>-->
+<!--    <button class="carousel-control next">Next</button>-->
+  </div>
+
+</header>
+<!-- 注册模态窗口 -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('registerModal')">&times;</span>
+    <h2>注册</h2>
+    <form>
+      <label for="regUsername">账号:</label>
+      <input type="text" id="regUsername" name="regUsername" required>
+
+      <label for="regPassword">密码:</label>
+      <input type="password" id="regPassword" name="regPassword" required>
+
+      <label for="confirmPassword">确认密码:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+      <button type="submit">注册</button>
+    </form>
+  </div>
+</div>
+<div>
+    <h2>&nbsp;&nbsp;&nbsp;<a href="" >精选</a></h2>
+</div>
+<section>
+  <h2>热门产品</h2>
+  <div class="product">
+    <!-- 产品列表 -->
+
+  </div>
+</section>
+<aside>
+  <h3>&nbsp;&nbsp;&nbsp;公告</h3>
+  <p>&nbsp;&nbsp;&nbsp;<a href="">关于部分地区配送延迟的通知</a></p>
+</aside>
+<section>
+<!--  凑空段区-->
+  <br><br><br><br><br>
+</section>
+<footer>
+  <p>&copy; 2024 小c. 版权所有。</p >
+  <a href="关于我们界面.html">About Us</a>&nbsp;//&nbsp;<a href="博客.html">Blog</a>
+</footer>
 </body>
 </html>

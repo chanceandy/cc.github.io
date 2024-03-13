@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-slide img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* .carousel-indicators button {
+    
+  }
+  
+  .carousel-control {
+    
+  } */
+  article{
+    background-image: url("R-C.jpg");
+    background-color: #333;
+    background-size: cover; /* 使图片覆盖整个元素 */
+    background-position: center; /* 图片居中显示 */
+    background-repeat: no-repeat; /* 防止图片重复 */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header{
+    text-align: center;
+    padding: 20px 0;
+    background-color:#E0E0E0
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav h2 a {
+    color: #333;
+    text-decoration: none;
+  }
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  .product {
+    display: inline-block;
+    width: 200px;
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .banner {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  .active {
+    transform: translateX(0);
+  }
+  
+  .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .active-dot {
+    background-color: #555;
+  }
+  
+  footer a{
+    color:white;
+    /*font-size: x-small;*/
+    font-family: 'Indie Flower', cursive;
+    /*去除下划线*/
+    text-decoration: none;
+  }
+  #nav-right {
+    position: absolute;
+    top: 10px; /* 距离顶部的距离 */
+    right: 10px; /* 距离右侧的距离 */
+  }
+  
+  #nav-right .nav-link {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff; /* 链接文本颜色 */
+    background-color: #87CEEB; /* 链接背景颜色 */
+    border-radius: 5px;
+    margin-left: 10px; /* 链接之间的间距 */
+  }
+  
+  #nav-right .nav-link:hover {
+    background-color: #87CEEB; /* 鼠标悬停时的背景颜色 */
+  }
+  
+  .modal {
+    display: none; /* 默认不显示 */
+    position: fixed; /* 固定定位 */
+    z-index: 1; /* 确保模态窗口在最上层 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* 背景半透明 */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 居中显示 */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 表单样式 */
+  form {
+    display: block;
+    width: 100%;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  form button:hover {
+    opacity: 0.8;
+  }
+  
+  div h2 a{
+    text-decoration:none;
+    color:#000000;
+  }
+  
+  /* 鼠标悬停在超链接上时的样式 */
+  .link-color:hover {
+    color: red; /* 鼠标悬停时文字颜色变为红色 */
+  }
+  aside p a{
+    color: #222222;
+  }
+  
