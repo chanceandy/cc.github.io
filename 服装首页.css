@@ -148,10 +148,11 @@ body {
     background-color: #87CEEB; /* 链接背景颜色 */
     border-radius: 5px;
     margin-left: 10px; /* 链接之间的间距 */
+    /* transition: background-color; */
   }
   
   #nav-right .nav-link:hover {
-    background-color: #87CEEB; /* 鼠标悬停时的背景颜色 */
+    background-color: #45c5f8; /* 鼠标悬停时的背景颜色 */
   }
   
   .modal {
