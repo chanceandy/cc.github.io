@@ -3,10 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andy</title>
+  <title>Andy's Clothing Store</title>
   <link rel="stylesheet" href="服装首页.css">
-  <link href="https://fonts.googlefonts.cn/css?family=Indie+Flower" rel="stylesheet">
+  <link rel="icon" href="slide4.jpg" type="image/x-icon">
+  <!-- 或者，如果您的图标是其他格式 -->
+  <link rel="icon" href="slide4.jpg" type="image/png">
+  <!-- <link href="https://fonts.googlefonts.cn/css?family=Indie+Flower" rel="stylesheet"> -->
   <script src="服装首页.js" defer></script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org", // 指定结构化数据的上下文,这里使用的是Schema.org的词汇
+      "@type": "WebSite", // 定义数据类型，表明这是一个网站
+      "name": "安迪的服装店", // 网站的名称
+      "url": "https://www.andychance.store/", // 网站的URL地址
+      "description": "欢迎来到安迪的个人服装店，我们提供各种时尚的男士、女士和儿童服装。" // 对网站内容的简短描述
+    }
+    </script>
 </head>
 <body>
 <article>
@@ -29,13 +41,14 @@
   <div class="modal-content">
     <span class="close" onclick="closeModal('loginModal')">&times;</span>
     <h2>登录</h2>
-    <form>
+    <form action="https://www.andychance.store/" method="post"> <!-- 添加action属性指定表单提交的URL -->
       <label for="username">账号:</label>
       <input type="text" id="username" name="username" required>
-
+      
       <label for="password">密码:</label>
       <input type="password" id="password" name="password" required>
-
+      
+      <!-- 添加一个提交按钮 -->
       <button type="submit">登录</button>
     </form>
   </div>
@@ -45,12 +58,12 @@
   <div class="carousel-container">
     <div class="carousel-slide">
       <!-- 轮播图内容 -->
-      <img src="slide1.jpg" alt="Image 1" width="400">
-      <img src="slide2.jpg" alt="Image 2" width="400">
-      <img src="slide3.jpg" alt="Image 3" width="400">
-      <img src="slide4.jpg" alt="Image 4" width="400">
-      <img src="slide5.jpg" alt="Image 5" width="400">
-      <img src="slide6.jpg" alt="Image 6" width="400">
+      <img src="slide1.jpg" alt="T恤" width="400" title="T恤">
+      <img src="slide2.jpg" alt="外套" width="400" title="外套">
+      <img src="slide3.jpg" alt="防晒系列" width="400" title="防晒系列">
+      <img src="slide4.jpg" alt="衬衫" width="400" title="衬衫">
+      <img src="slide5.jpg" alt="POLO衫" width="400" title="POLO衫">
+      <img src="slide6.jpg" alt="卫衣" width="400" title="卫衣">
       <!-- 更多轮播项... -->
     </div>
     <div class="carousel-indicators">
@@ -68,33 +81,37 @@
 
 </header>
 <!-- 注册模态窗口 -->
+<!-- 注册模态窗口 -->
 <div id="registerModal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('registerModal')">&times;</span>
     <h2>注册</h2>
-    <form>
+    <form action="https://www.andychance.store/" method="post"> <!-- 添加action属性指定表单提交的URL -->
       <label for="regUsername">账号:</label>
       <input type="text" id="regUsername" name="regUsername" required>
-
+      
       <label for="regPassword">密码:</label>
       <input type="password" id="regPassword" name="regPassword" required>
-
+      
       <label for="confirmPassword">确认密码:</label>
       <input type="password" id="confirmPassword" name="confirmPassword" required>
-
+      
       <button type="submit">注册</button>
     </form>
   </div>
 </div>
-<div>
-    <h2>&nbsp;&nbsp;&nbsp;<a href="" >精选</a></h2>
+<div class="contents-title">
+  注册会员更享优惠
+</div>
+<!-- <div>
+    <h2>&nbsp;&nbsp;&nbsp;<a href="精选.html" >精选</a></h2>
 </div>
 <section>
   <h2>热门产品</h2>
   <div class="product">
-    <!-- 产品列表 -->
+    
 
-  </div>
+  </div> -->
 </section>
 <aside>
   <h3>&nbsp;&nbsp;&nbsp;公告</h3>
@@ -105,8 +122,8 @@
   <br><br><br><br><br>
 </section>
 <footer>
-  <p>&copy; 2024 小c. 版权所有。</p >
-  <a href="关于我们界面.html">About Us</a>&nbsp;//&nbsp;<a href="博客.html">Blog</a>
+  <p>&nbsp;&nbsp;&copy;2024 Andy's Clothing Store. 版权所有。</p >
+  <!-- <a href="关于我们界面.html">关于我们</a>&nbsp;&nbsp;<a href="博客.html">我的博客</a> -->
 </footer>
 </body>
 </html>

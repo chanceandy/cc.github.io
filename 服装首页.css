@@ -26,7 +26,7 @@ body {
     
   } */
   article{
-    background-image: url("R-C.jpg");
+    background-image: url("导航栏背景.jpg");
     background-color: #333;
     background-size: cover; /* 使图片覆盖整个元素 */
     background-position: center; /* 图片居中显示 */
@@ -129,8 +129,8 @@ body {
   
   footer a{
     color:white;
-    /*font-size: x-small;*/
-    font-family: 'Indie Flower', cursive;
+    font-size: x-small;
+    /* font-family: 'Indie Flower', cursive; */
     /*去除下划线*/
     text-decoration: none;
   }
@@ -235,5 +235,13 @@ body {
   }
   aside p a{
     color: #222222;
+  }
+  
+  .contents-title{
+    font-weight: bold;
+    text-align: center;
+    font-size: 29px;
+    letter-spacing: 2px;
+    color: #000;
   }
   
