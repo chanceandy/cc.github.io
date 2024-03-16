@@ -245,3 +245,32 @@ body {
     color: #000;
   }
   
+  /* 搜索容器样式 */
+.search-container {
+  display:flex inline;
+
+}
+
+/* 搜索栏样式 */
+.search-bar {
+  width: 28px; /* 初始宽度 */
+  height: 48px; /* 高度 */
+  padding: 0 20px 0 20px; /* 初始内边距，左右分别为0和20px，上下为0 */
+  border: none; /* 无边框 */
+  border-radius: 24px; /* 圆角边框，半径为高度的一半 */
+  background-color: rgba(245, 245, 245, 0.5); /* 半透明背景颜色 */
+  opacity: 0.7; /* 透明度为70% */
+  transition: width 0.3s ease, opacity 0.3s ease; /* 宽度和透明度变化的过渡效果 */
+}
+
+/* 搜索栏获得焦点时的样式 */
+.search-bar:focus {
+  outline: none; /* 去除焦点时的轮廓线 */
+  width: 200px; /* 宽度扩展到200px */
+  padding-right: 40px; /* 增加右内边距 */
+}
+
+/* 鼠标悬停在搜索图标上时的样式 */
+.search-icon:hover {
+  transform: scale(1.1); /* 放大到1.1倍 */
+}
