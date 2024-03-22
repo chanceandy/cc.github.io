@@ -1,31 +1,3 @@
-// 显示模态窗口的函数，接收一个参数 modalId，表示模态窗口的ID
-function showModal(modalId) {
-  // 获取页面上ID为 modalId 的元素
-  const modal = document.getElementById(modalId);
-  // 将该元素的 display 样式设置为 block，以显示模态窗口
-  modal.style.display = "block";
-}
-
-// 隐藏模态窗口的函数，接收一个参数 modalId，表示模态窗口的ID
-function closeModal(modalId) {
-  // 获取页面上ID为 modalId 的元素
-  const modal = document.getElementById(modalId);
-  // 将该元素的 display 样式设置为 none，以隐藏模态窗口
-  modal.style.display = "none";
-}
-
-// 监听窗口的点击事件
-window.onclick = function(event) {
-  // 检查点击的目标元素是否是ID为 'loginModal' 或 'registerModal' 的元素
-  if (event.target === document.getElementById('loginModal') || event.target === document.getElementById('registerModal')) {
-    // 如果是，获取ID为 'loginModal' 和 'registerModal' 的元素
-    const modal = document.getElementById('loginModal');
-    const registerModal = document.getElementById('registerModal');
-    // 隐藏这两个模态窗口
-    modal.style.display = "none";
-    registerModal.style.display = "none";
-  }
-}
 
 // 初始化一个变量 currentIndex，用于跟踪当前轮播图的索引
 let currentIndex = 0;
